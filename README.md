@@ -15,7 +15,7 @@ flowchart TB
         T3["Inbound signal<br/>signup · call scored · form"]
     end
 
-    subgraph SKILL["2 · Skills — playbooks compiled into procedure"]
+    subgraph SKILL["2 · Skills - playbooks compiled into procedure"]
         direction LR
         S1["Demand<br/>ABM engine<br/>account scoring"]
         S2["Conversion<br/>PLG activation<br/>post-demo follow-up"]
@@ -24,7 +24,7 @@ flowchart TB
         S5["Ops<br/>CRM hygiene<br/>token rotation"]
     end
 
-    subgraph MEM["3 · Memory — what survives the session"]
+    subgraph MEM["3 · Memory - what survives the session"]
         direction LR
         M1["Constitution<br/>rules that override defaults"]
         M2["Facts<br/>one file per fact, indexed"]
@@ -32,7 +32,7 @@ flowchart TB
         M4["Ledgers<br/>what each run actually changed"]
     end
 
-    subgraph HAND["4 · Hands — MCP servers"]
+    subgraph HAND["4 · Hands - MCP servers"]
         direction LR
         H1["CRM"]
         H2["Product admin API"]
@@ -106,4 +106,8 @@ This is also the layer that closes the loop. Outcomes get written back into memo
 
 ## What is in this repository
 
-Sanitized versions of the skills above, the memory layout, and the cron definitions. Client names, tenant identifiers, internal endpoints and pricing internals are removed. The vendor skills I did not write are not here.
+- [`skills/weekly-call-report`](skills/weekly-call-report/SKILL.md) - the retention skill from the diagram. What data it pulls and why, the thresholds that turn a score into a finding, the honesty gates, the six-block letter, and the human approval step before anything reaches a customer. A [worked example](skills/weekly-call-report/references/example-report.md) on invented numbers shows the output.
+
+More of the skills in the diagram will land here one at a time, in the same shape.
+
+Everything published is sanitized: customer names, account identifiers, internal endpoints and commercial details are removed. Vendor skills I use but did not write are not included.
