@@ -2,7 +2,12 @@
 
 I am a founder, not an engineering team. Sales, marketing, CRM hygiene and content for a B2B SaaS company run through the setup described here: 14 custom skills, 4 MCP servers, 14 scheduled agents, 3 production sites.
 
-The bottleneck was never the model. It was that nothing survived the end of a session. Every conversation started from zero, so every conversation produced a decent one-off and no compounding system. What follows is the architecture that fixed that.
+The bottleneck was never the model. It was that nothing survived the end of a session.
+
+This is the execution layer of an architecture I have written up in full
+elsewhere: [Designing for Optionality](https://smartsales.ai/en/writing/designing-for-optionality/). Two sibling repositories hold the
+other layers: the [knowledge graph](https://github.com/romanmagdalenko/castle-graph-engine)
+and the [behaviour layer](https://github.com/romanmagdalenko/crm-on-cloudflare). Every conversation started from zero, so every conversation produced a decent one-off and no compounding system. What follows is the architecture that fixed that.
 
 ## The architecture
 
